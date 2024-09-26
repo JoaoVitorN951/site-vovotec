@@ -10,18 +10,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-image: url('imagens/fundo3.png'); /* imagem de fundo */
-            background-size: cover; /* Ajusta a imagem para cobrir toda a área do fundo */
-            background-repeat: no-repeat; /* Evita repetição da imagem */
-            background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
-            font-family: 'Roboto', sans-serif; /* Fonte */
-            color: #333; /* Cor padrão do texto */
+            background-image: url('imagens/fundo3.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
         }
 
         /* Navbar */
         .navbar {
-            background-color: rgba(255, 255, 255, 0.9); /* Transparência na navbar */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .navbar-brand {
@@ -40,11 +40,11 @@
 
         /* Conteúdo principal */
         main {
-            background-color: rgba(255, 255, 255, 0.85); /* Fundo semitransparente */
+            background-color: rgba(255, 255, 255, 0.85);
             padding: 40px;
             margin-top: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         h1, h2 {
@@ -59,42 +59,48 @@
             margin-bottom: 15px;
         }
 
-        ul {
-            padding-left: 20px;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-
-        /* Estilo das imagens */
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra nas imagens */
+        .service-item {
+            background-color: #fff;
+            padding: 20px;
             margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
 
-        /* Estilo dos vídeos */
-        .videos iframe {
-            width: 100%;
-            height: 315px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra nos vídeos */
+        .service-item:hover {
+            transform: translateY(-5px); /* Animação de destaque */
         }
 
-        /* Estilo dos botões */
-        .btn-primary {
+        .service-icon {
+            font-size: 2em;
+            color: #007bff;
+            margin-right: 15px;
+        }
+
+        .service-title {
+            font-weight: 700;
+            color: #007bff;
+        }
+
+        .service-description {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .service-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
             background-color: #007bff;
-            border-color: #007bff;
-            transition: background-color 0.3s, border-color 0.3s;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
         }
 
-        .btn-primary:hover {
+        .service-link:hover {
             background-color: #0056b3;
-            border-color: #0056b3;
         }
 
         /* Rodapé */
@@ -105,7 +111,7 @@
             margin-top: 30px;
             border-top: 1px solid #eaeaea;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         footer ul li a {
@@ -118,7 +124,6 @@
             color: #007bff;
         }
 
-        /* Personalizações adicionais */
         .container {
             max-width: 900px;
         }
