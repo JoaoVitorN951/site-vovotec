@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecno Vovô</title>
+    <link rel="icon" href="imagens/logoVovo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('imagens/fundo3.png'); /* imagem de fundo */
+            background-size: cover; /* Ajusta a imagem para cobrir toda a área do fundo */
+            background-repeat: no-repeat; /* Evita repetição da imagem */
+            background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+            font-family: 'Roboto', sans-serif; /* Fonte */
+            color: #333; /* Cor padrão do texto */
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.9); /* Transparência na navbar */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: #007bff;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: #555;
+        }
+
+        .nav-link:hover {
+            color: #007bff;
+        }
+
+        /* Conteúdo principal */
+        main {
+            background-color: rgba(255, 255, 255, 0.85); /* Fundo semitransparente */
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        h1, h2 {
+            font-weight: 700;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Estilo das imagens */
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra nas imagens */
+            margin-bottom: 20px;
+        }
+
+        /* Estilo dos vídeos */
+        .videos iframe {
+            width: 100%;
+            height: 315px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra nos vídeos */
+        }
+
+        /* Estilo dos botões */
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px;
+            margin-top: 30px;
+            border-top: 1px solid #eaeaea;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        footer ul li a {
+            color: #fff;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        footer ul li a:hover {
+            color: #007bff;
+        }
+
+        /* Personalizações adicionais */
+        .container {
+            max-width: 900px;
+        }
+
+        .navbar-brand, h1 {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra no texto */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="main.html">Tecno Vovô</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobrenos.html">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.blogger.com/about/?hl=pt-br">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Seção principal de informações -->
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <img src="imagens/vovo.jpg" alt="Tecno Vovô" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h1>Tecno Vovô</h1>
+                    <p>A Tecno Vovô é uma empresa especializada em serviços e tutoriais para idosos. Nosso objetivo é promover a qualidade de vida e o bem-estar dos nossos clientes.</p>
+                    <p>Oferecemos uma ampla gama de serviços, incluindo:</p>
+                    <ul>
+                        <li>Cursos em vídeo</li>
+                        <li>Tutoriais e Guias Passo a Passo</li>
+                        <li>Suporte Técnico Personalizado</li>
+                        <li>Workshops e Webinars</li>
+                        <li>Recursos Educacionais Específicos</li>
+                        <li>Suporte Comunitário</li>
+                        <li>Serviços de Assistência Domiciliar</li>
+                        <li>Aplicativos e Ferramentas Personalizadas</li>
+                    </ul>
+                    <p>Nossos profissionais são altamente qualificados e experientes, e estão comprometidos em oferecer o melhor atendimento possível aos nossos clientes.</p>
+                    <p>Se você está procurando por uma empresa de serviços de suporte para idosos, a Tecno Vovô é a escolha certa para você.</p>
+                </div>
+            </div>
+
+            <!-- Seção de galeria de imagens -->
+            <div class="gallery mb-4">
+                <h2>Galeria de Workshops Ministrados</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="imagens/work1.jpeg" alt="Imagem 1" class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="imagens/work6.jpg" alt="Imagem 2" class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="imagens/work3.jpeg" alt="Imagem 3" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <img src="imagens/work4.jpeg" alt="Imagem 4" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="imagens/work5.jpeg" alt="Imagem 5" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção de vídeos -->
+            <div class="videos">
+                <h2>Exemplos de videos tutoriais</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dR5PNZhaLzU?si=_8evuNnXg4AG61eM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XMrOg-cPbgM?si=1x2FUNTSJe0Bbk-t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/I50qnfMSaH4?si=7D9GEOs1QHEMqFST" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nmGt5R-TWRM?si=_SZ490OwzvaVLlD6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+           
