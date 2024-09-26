@@ -135,7 +135,7 @@
                 </div>
                 <div class="col-md-6">
                     <h2>Formulário de contato</h2>
-                    <form>
+                    <form action="enviar_contato.php" method="POST">
                         <div class="form-group">
                             <label for="nome">Nome:</label>
                             <input type="text" class="form-control" id="nome" name="nome" required>
@@ -148,7 +148,7 @@
                             <label for="assunto">Assunto:</label>
                             <input type="text" class="form-control" id="assunto" name="assunto" required>
                         </div>
-                        <div class="form-group">
+                            <div class="form-group">
                             <label for="mensagem">Mensagem:</label>
                             <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
                         </div>
